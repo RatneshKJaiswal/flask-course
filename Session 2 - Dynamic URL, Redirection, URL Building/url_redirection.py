@@ -13,9 +13,9 @@ def passed():
     return "<h1>Congratz, you've passed!</h1>"
 
 
-@app.route("/fail")
+@app.route("/fail/")
 def failed():
-    return "<h1>Sorry, you've failed!</h1>"
+    return f"<h1>Sorry, you've failed!</h1>"
 
 
 @app.route("/score/<name>/<int:num>")
